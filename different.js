@@ -29,9 +29,19 @@
 //     }
 // }
 
-for(i=1; i<=100; i+=2){
-    if(i%3===0 && i%5==0){
+for (i = 1; i <= 100; i += 2) {
+    if (i % 3 === 0 && i % 5 == 0) {
         console.log(i);
     }
 }
+// give me the sum of the number from 1 to 20 that are divisble by 3
 
+let total = 0;
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log(i);
+        total = total + i ;
+    }
+}
+
+console.log('total of the numbers', total)
